@@ -1,0 +1,41 @@
+:root {
+    --retro-yellow: #fde74c;
+    --cobalt: #3b3b3b;
+}
+
+* {
+    font-family: marshmallow-fluff, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    margin: 0;
+    background-color: var(--retro-yellow);
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-width: 50px;
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cobalt);
+    margin: 0px 30px;
+    font-size: 30px;
+}
+
+#banner {
+    padding: 250px;
+    background-image: url("../images/banner.avif");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    filter: brightness(.7);
+}
