@@ -1,0 +1,110 @@
+:root {
+    --retro-yellow: #fde74c;
+    --cobalt: #3b3b3b;
+    --soft-grey: #666666;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Sidebar */
+
+aside {
+    background-color: #BF0B0B;
+    width: fit-content;
+    height: auto;
+    padding: 10px;
+    border-right: var(--cobalt) solid 8px;
+}
+
+.link-card {
+    border: #3b3b3b solid 5px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-card:hover {
+    border: #3b3b3b solid 5px;
+    background-color: var(--retro-yellow);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-card a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Bungee', cursive;
+}
+
+.link-card:hover a {
+    color: var(--cobalt);
+}
+
+/* Primary content */
+
+#primary {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-card {
+    width: auto;
+    background-color: var(--soft-grey);
+    border: var(--cobalt) solid 8px;
+    border-radius: 20px;
+    color: white;
+    margin: 20px 30px;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+
+.content-card h2 {
+    font-size: 50px;
+    margin: 10px;
+}
+
+.content-card a {
+    text-decoration: none;
+    color: white;
+}
+
+.content-card h2 a:hover {
+    color: var(--retro-yellow);
+    text-decoration: underline;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+}
+
+.content-card p {
+    font-family: 'Bungee', cursive;
+    line-height: 25px;
+    margin: 10px 20px;
+}
+
+.content-card img {
+    background-image: url("../images/release1.jpg");
+    height: 250px;
+    border: var(--cobalt) solid 8px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    float: left;
+}
+
+#last-card {
+    margin-bottom: 30px;
+}
