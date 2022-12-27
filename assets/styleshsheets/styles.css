@@ -4,7 +4,7 @@
 }
 
 * {
-    font-family: marshmallow-fluff, sans-serif;
+    font-family: marshmallow-fluff, 'Bungee', cursive;
     font-weight: 400;
     font-style: normal;
 }
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background-color: var(--retro-yellow);
+    background-color: var(--cobalt);
 }
 
 header {
@@ -62,7 +62,7 @@ header nav a {
 
 footer {
     margin: 0;
-    background-color: var(--cobalt);
+    background-color: var(--retro-yellow);
     background-size: cover;
     padding: 10px;
     display: flex;
@@ -71,7 +71,7 @@ footer {
 }
 
 footer nav a {
-    color: var(--retro-yellow);
+    color: var(--cobalt);
     font-family: 'Bungee', cursive;
     font-size: 20px;
 }
