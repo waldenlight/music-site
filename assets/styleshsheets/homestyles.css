@@ -2,6 +2,7 @@
     --retro-yellow: #fde74c;
     --cobalt: #3b3b3b;
     --soft-grey: #666666;
+    --vibe-red: #BF0B0B;
 }
 
 main {
@@ -12,16 +13,16 @@ main {
 /* Sidebar */
 
 aside {
-    background-color: #BF0B0B;
-    width: fit-content;
+    min-width: 200px;
     height: auto;
-    padding: 10px;
-    border-right: var(--cobalt) solid 8px;
+    padding: 20px;
 }
 
 .link-card {
+    background-color: white;
     border: #3b3b3b solid 5px;
     border-radius: 10px;
+    size: 160px;
     color: white;
     padding: 10px;
     margin: 10px;
@@ -31,25 +32,18 @@ aside {
 }
 
 .link-card:hover {
-    border: #3b3b3b solid 5px;
-    background-color: var(--retro-yellow);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--vibe-red);
 }
 
 .link-card a {
-    color: white;
+    color: var(--cobalt);
     text-decoration: none;
     font-size: 30px;
     font-family: 'Bungee', cursive;
 }
 
 .link-card:hover a {
-    color: var(--cobalt);
+    color: white;
 }
 
 /* Primary content */
@@ -61,10 +55,10 @@ aside {
 
 .content-card {
     width: auto;
-    background-color: var(--soft-grey);
+    background-color: white;
     border: var(--cobalt) solid 8px;
     border-radius: 20px;
-    color: white;
+    color: var(--cobalt);
     margin: 20px 30px;
     margin-bottom: 0px;
     padding: 20px;
@@ -77,11 +71,11 @@ aside {
 
 .content-card a {
     text-decoration: none;
-    color: white;
+    color: var(--cobalt);
 }
 
 .content-card h2 a:hover {
-    color: var(--retro-yellow);
+    color: var(--vibe-red);
     text-decoration: underline;
 }
 
