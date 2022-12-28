@@ -45,13 +45,15 @@ header nav a {
 #banner {
     padding: 100px;
     background-image: url("../images/banner.avif");
+    background-color: #9b9b9b;
+    background-blend-mode: multiply;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    filter: brightness(.7);
     height: fit-content;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #banner h2 {
