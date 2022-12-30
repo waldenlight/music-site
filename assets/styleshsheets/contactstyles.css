@@ -1,0 +1,51 @@
+:root {
+    --retro-yellow: #fde74c;
+    --cobalt: #3b3b3b;
+    --soft-grey: #666666;
+    --vibe-red: #BF0B0B;
+}
+
+.content {
+    background-color: white;
+    border-radius: 20px;
+    color: var(--cobalt);
+    width: auto;
+    padding: 10px;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+}
+
+.content h2 {
+    margin: 30px;
+    font-size: 40px;
+}
+
+.content-card {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.content p {
+    font-family: 'Bungee', cursive;
+    line-height: 25px;
+    width: fit-content;
+    font-size: 30px;
+    margin: 20px;
+    margin-top: 0;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
