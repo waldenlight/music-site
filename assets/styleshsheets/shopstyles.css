@@ -1,0 +1,66 @@
+:root {
+    --retro-yellow: #fde74c;
+    --cobalt: #3b3b3b;
+    --soft-grey: #666666;
+    --vibe-red: #BF0B0B;
+    --wild-green: #00df45;
+    --burst-purple: #ba2aff;
+    --soft-blue: #1fbdff;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 1000px;
+    margin: 30px 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 330px;
+    border: var(--cobalt) solid 8px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card:hover {
+    transition: 500ms;
+    translate: -10px -10px;
+}
+
+#card-one:hover {
+    box-shadow: 10px 10px var(--soft-blue);
+}
+
+#card-two:hover {
+    box-shadow: 10px 10px var(--burst-purple);
+}
+
+#card-three:hover {
+    box-shadow: 10px 10px var(--vibe-red);
+}
+
+#card-four:hover {
+    box-shadow: 10px 10px var(--wild-green);
+}
+
+.card img {
+    width: 200px;
+    border-bottom: var(--cobalt) solid 5px;
+}
+
+.card h2 {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.card p {
+    margin: 5px;
+    font-family: 'Bungee', cursive;
+    font-size: 10px;
+}
