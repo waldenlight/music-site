@@ -13,9 +13,9 @@ main {
 /* Sidebar */
 
 aside {
-    min-width: 200px;
+    width: fit-content;
     height: auto;
-    padding: 30px;
+    margin: 10px;
 }
 
 .link-card {
@@ -101,4 +101,166 @@ aside {
 
 #last-card {
     margin-bottom: 30px;
+}
+
+/* Responsivity */
+
+@media screen and (max-width: 1280px) {
+
+    #primary {
+        width: 1000px;
+    }
+
+    .content-card {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-content p {
+        margin: 10px 60px;
+    }
+
+}
+
+@media screen and (max-width: 1170px) {
+    .content-card {
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+
+    .link-card {
+        size: 160px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .link-card a {
+        font-size: 25px;
+    }
+
+    .card-content p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .content-card {
+        margin: 10px 10px;
+    }
+
+    .link-card {
+        margin: 5px;
+    }
+
+    .card-content p {
+        display: none;
+    }
+
+    .card-content img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .link-card {
+        width: 150px;
+    }
+
+    .link-card a {
+        font-size: 20px;
+    }
+
+    .content-card h2 {
+        font-size: 40px;
+    }
+
+    .card-content img {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .content-card h2 {
+        font-size: 35px;
+    }
+
+    .card-content img {
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+
+    .content-card h2 {
+        font-size: 30px;
+    }
+
+    .link-card {
+        padding: 10px 5px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    aside {
+        margin: 0px;
+    }
+
+    #primary {
+        padding: none;
+    }
+
+    .content-card {
+        margin: 10px 20px;
+    }
+
+    .link-card {
+        width: 120px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .link-card a {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    aside {
+        display: none;
+    }
+
+    #primary {
+        align-items: center;
+    }
+
+    .content-card {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .content-card {
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    .content-card {
+        width: 230px;
+    }
+
 }
