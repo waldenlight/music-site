@@ -62,7 +62,7 @@ header nav a {
 
 #banner {
     padding: 100px;
-    background-image: url("../images/banner.avif");
+    background-image: url("../assets/images/banner.avif");
     background-color: #9b9b9b;
     background-blend-mode: multiply;
     background-size: cover;
