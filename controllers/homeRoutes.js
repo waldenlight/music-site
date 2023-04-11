@@ -15,9 +15,119 @@ router.get('/', async (req, res) => {
 
     const posts = postData.map((post) => post.get({ plain: true }));
 
-    res.render('dashboard', {
+    res.render('home', {
       posts,
       logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/about', async (req, res) => {
+  try {
+    // const postData = await Post.findAll({
+    //   include: [
+    //     {
+    //       model: User,
+    //       attributes: ['name'],
+    //     },
+    //   ],
+    // });
+
+    // const posts = postData.map((post) => post.get({ plain: true }));
+
+    res.render('about', {
+      // posts,
+      // logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/contact', async (req, res) => {
+  try {
+    // const postData = await Post.findAll({
+    //   include: [
+    //     {
+    //       model: User,
+    //       attributes: ['name'],
+    //     },
+    //   ],
+    // });
+
+    // const posts = postData.map((post) => post.get({ plain: true }));
+
+    res.render('contact', {
+      // posts,
+      // logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/dashboard', async (req, res) => {
+  try {
+    // const postData = await Post.findAll({
+    //   include: [
+    //     {
+    //       model: User,
+    //       attributes: ['name'],
+    //     },
+    //   ],
+    // });
+
+    // const posts = postData.map((post) => post.get({ plain: true }));
+
+    res.render('dashboard', {
+      // posts,
+      // logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/music', async (req, res) => {
+  try {
+    // const postData = await Post.findAll({
+    //   include: [
+    //     {
+    //       model: User,
+    //       attributes: ['name'],
+    //     },
+    //   ],
+    // });
+
+    // const posts = postData.map((post) => post.get({ plain: true }));
+
+    res.render('music', {
+      // posts,
+      // logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/shop', async (req, res) => {
+  try {
+    // const postData = await Post.findAll({
+    //   include: [
+    //     {
+    //       model: User,
+    //       attributes: ['name'],
+    //     },
+    //   ],
+    // });
+
+    // const posts = postData.map((post) => post.get({ plain: true }));
+
+    res.render('shop', {
+      // posts,
+      // logged_in: req.session.logged_in
     });
   } catch (err) {
     res.status(500).json(err);
