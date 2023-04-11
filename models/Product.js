@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Post extends Model { }
+class Product extends Model { }
 
-Post.init(
+Product.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -17,19 +17,7 @@ Post.init(
     },
     description: {
       type: DataTypes.TEXT('long'),
-    },
-    date_created: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
-    },
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
-    },
+    }
   },
   {
     sequelize,
@@ -40,4 +28,4 @@ Post.init(
   }
 );
 
-module.exports = Post;
+module.exports = Product;
