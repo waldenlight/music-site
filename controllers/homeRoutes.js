@@ -48,21 +48,7 @@ router.get('/about', async (req, res) => {
 
 router.get('/contact', async (req, res) => {
   try {
-    // const postData = await Post.findAll({
-    //   include: [
-    //     {
-    //       model: User,
-    //       attributes: ['name'],
-    //     },
-    //   ],
-    // });
-
-    // const posts = postData.map((post) => post.get({ plain: true }));
-
-    res.render('contact', {
-      // posts,
-      // logged_in: req.session.logged_in
-    });
+    res.render('contact', {});
   } catch (err) {
     res.status(500).json(err);
   }
@@ -70,21 +56,7 @@ router.get('/contact', async (req, res) => {
 
 router.get('/dashboard', async (req, res) => {
   try {
-    // const postData = await Post.findAll({
-    //   include: [
-    //     {
-    //       model: User,
-    //       attributes: ['name'],
-    //     },
-    //   ],
-    // });
-
-    // const posts = postData.map((post) => post.get({ plain: true }));
-
-    res.render('dashboard', {
-      // posts,
-      // logged_in: req.session.logged_in
-    });
+    res.render('dashboard', {});
   } catch (err) {
     res.status(500).json(err);
   }
@@ -92,21 +64,7 @@ router.get('/dashboard', async (req, res) => {
 
 router.get('/music', async (req, res) => {
   try {
-    // const postData = await Post.findAll({
-    //   include: [
-    //     {
-    //       model: User,
-    //       attributes: ['name'],
-    //     },
-    //   ],
-    // });
-
-    // const posts = postData.map((post) => post.get({ plain: true }));
-
-    res.render('music', {
-      // posts,
-      // logged_in: req.session.logged_in
-    });
+    res.render('music', {});
   } catch (err) {
     res.status(500).json(err);
   }
@@ -114,21 +72,7 @@ router.get('/music', async (req, res) => {
 
 router.get('/shop', async (req, res) => {
   try {
-    // const postData = await Post.findAll({
-    //   include: [
-    //     {
-    //       model: User,
-    //       attributes: ['name'],
-    //     },
-    //   ],
-    // });
-
-    // const posts = postData.map((post) => post.get({ plain: true }));
-
-    res.render('shop', {
-      // posts,
-      // logged_in: req.session.logged_in
-    });
+    res.render('shop', {});
   } catch (err) {
     res.status(500).json(err);
   }

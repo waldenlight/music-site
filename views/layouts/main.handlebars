@@ -1,67 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Posts</title>
-    <link rel="stylesheet" href="/css/jass.css">
-    <link rel="stylesheet" href="/css/homestyles.css">
-</head>
-
-<body>
-    <div class="flex-column justify-space-around">
-
-        {{!-- <header>
-            <div id="nav">
-                <nav>
-                    <a href="./index.html">Home</a>
-                    <a href="./about.html">About</a>
-                    <a href="./music.html">Music</a>
-                    <a href="./shop.html">Store</a>
-                    <a href="./contact.html">Contact</a>
-                </nav>
-            </div>
-            <div id="img">
-                <a href="./index.html"><img src="./assets/images/h1logodark.png" alt=""></a>
-            </div>
-        </header> --}}
-
-        <header class="id display-flex justify-space-between align-center p-2">
-            <h1>
-                <div id="nav">
-                    <nav>
-                        <a href="./index.html">Home</a>
-                        <a href="./about.html">About</a>
-                        <a href="./music.html">Music</a>
-                        <a href="./shop.html">Store</a>
-                        <a href="./contact.html">Contact</a>
-                    </nav>
-                </div>
-            </h1>
-            <div id="img">
-                <a href="./index.html"><img src="./assets/images/h1logodark.png" alt=""></a>
-            </div>
-            <nav>
-                {{#if logged_in}}
-                {{!-- <a href="/dashboard">Dashboard</a> | --}}
-                <button class="no-button" id="logout">logout</button>
-                {{else}}
-                <a href="/login">login</a>
-                {{/if}}
-            </nav>
-        </header>
-        <main class="container container-fluid mt-5">
-            {{{ body }}}
-        </main>
-        <footer>
-
-        </footer>
-    </div>
-
-    {{#if logged_in}}
-    <script src="/js/logout.js"></script>
-    {{/if}}
-</body>
+{{{ body }}}
 
 </html>
