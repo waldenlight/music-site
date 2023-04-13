@@ -20,12 +20,12 @@ const seedDatabase = async () => {
     });
   }
 
-  for (const comment of commentData) {
-    await Comment.create({
-      ...comment,
-      user_id: 1,
-    });
-  }
+  // for (const comment of commentData) {
+  //   await Comment.create({
+  //     ...comment,
+  //     user_id: 1,
+  //   });
+  // }
 
   process.exit(0);
 };

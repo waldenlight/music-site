@@ -36,29 +36,31 @@
     <main>
 
         <aside>
+            {{#each posts as |post| }}
+            {{#if post.release}}
             <div class="link-card">
-                <a href="">Release</a>
+                <a href="/post/{{post.id}}">{{post.name}}</a>
             </div>
-            <div class="link-card">
-                <a href="">Release</a>
-            </div>
-            <div class="link-card">
-                <a href="">Release</a>
-            </div>
-            <div class="link-card">
-                <a href="">Release</a>
-            </div>
-            <div class="link-card">
-                <a href="">Release</a>
-            </div>
-            <div class="link-card">
-                <a href="">Release</a>
-            </div>
+            {{/if}}
+            {{/each}}
         </aside>
 
         <div id="primary">
 
+            {{#each posts as |post| }}
             <div class="content-card">
+                <div class="content-title">
+                    <h2><a href="/post/{{post.id}}">{{post.name}}</a></h2>
+                </div>
+                <div class="card-content">
+                    <img src="./assets/images/release1.jpg"
+                        alt="An image of a performer holding a mic with four fingers to the air.">
+                    <p>{{post.description}}</p>
+                </div>
+            </div>
+            {{/each}}
+
+            {{!-- <div class="content-card">
                 <div class="content-title">
                     <h2><a href="">Release 1</a></h2>
                 </div>
@@ -99,7 +101,7 @@
                         corrupti
                         unde</p>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
 

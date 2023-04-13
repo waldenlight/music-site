@@ -18,11 +18,14 @@ Post.init(
     description: {
       type: DataTypes.TEXT('long'),
     },
-    date_created: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
-    },
+    // release: {
+    //   type: DataTypes.BOOLEAN,
+    // },
+    // date_created: {
+    //   type: DataTypes.DATE,
+    //   allowNull: false,
+    //   defaultValue: DataTypes.NOW,
+    // },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
