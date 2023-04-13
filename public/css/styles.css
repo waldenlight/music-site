@@ -60,6 +60,10 @@ header nav a {
     color: var(--cobalt);
 }
 
+header nav a:hover {
+    color: var(--soft-blue);
+}
+
 #banner {
     padding: 100px;
     background-image: url("../assets/images/banner.avif");
@@ -92,8 +96,11 @@ footer {
 
 footer nav a {
     color: var(--cobalt);
-    font-family: 'Bungee', cursive;
-    font-size: 20px;
+    font-size: 25px;
+}
+
+footer nav a:hover {
+    color: var(--soft-blue);
 }
 
 footer img {

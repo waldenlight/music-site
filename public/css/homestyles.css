@@ -7,7 +7,8 @@
 
 main {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 /* Sidebar */
@@ -21,7 +22,7 @@ aside {
 .link-card {
     background-color: white;
     border: #3b3b3b solid 5px;
-    border-radius: 10px;
+    /* border-radius: 5px; */
     size: 160px;
     color: white;
     padding: 10px;
@@ -56,8 +57,7 @@ aside {
 .content-card {
     width: auto;
     background-color: white;
-    border: var(--cobalt) solid 8px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: var(--cobalt);
     margin: 20px 30px;
     margin-bottom: 0px;
@@ -85,7 +85,7 @@ aside {
 }
 
 .content-card p {
-    font-family: 'Bungee', cursive;
+    font-family: 'Roboto', sans-serif;
     line-height: 25px;
     margin: 10px 20px;
 }
@@ -93,14 +93,10 @@ aside {
 .content-card img {
     background-image: url("../images/release1.jpg");
     height: 250px;
-    border: var(--cobalt) solid 8px;
-    border-radius: 10px;
+    border: var(--cobalt) solid 5px;
+    border-radius: 5px;
     margin: 10px 0px;
     float: left;
-}
-
-#last-card {
-    margin-bottom: 30px;
 }
 
 /* Responsivity */
